@@ -217,6 +217,7 @@ public class EnemyAI : MonoBehaviour
     {
         if(hasAttacked)
         {
+            Debug.Log("Has attacked");
             canMove = true;
             chased = true;
             animator.SetBool("InAttackRange", false);
@@ -248,6 +249,7 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             canMove = false;
+            enemyAttacking();
 
             //atm.DealDamage(player.gameObject);
 

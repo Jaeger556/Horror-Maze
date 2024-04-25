@@ -6,13 +6,13 @@ public class AttributeManager : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 100;
     [SerializeField] private HUDController HUDController;
-    [SerializeField] private Healthbar enemyHealthbar;
+    //[SerializeField] private Healthbar enemyHealthbar;
     private float currentHealth;
     //private int pAttack = 25;
     private float eAttack  = 33.5f;
 
     public GameObject pp;
-    public GameObject panel;
+    public GameObject deathCam;
     public GameObject monster;
 
     void Start()
@@ -30,7 +30,7 @@ public class AttributeManager : MonoBehaviour
         {
             Destroy(gameObject);
             LoseScreen.pIsDead = true;
-            panel.SetActive(true);
+            deathCam.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Destroy(monster);
@@ -46,8 +46,8 @@ public class AttributeManager : MonoBehaviour
     public void EnemyDamage(int amount)
     {
         currentHealth -= amount;
-        enemyHealthbar.GetComponent<Healthbar>();
-        enemyHealthbar.UpdateHealthBar(maxHealth, currentHealth);
+        //enemyHealthbar.GetComponent<Healthbar>();
+        //enemyHealthbar.UpdateHealthBar(maxHealth, currentHealth);
     }
 
     public void DealDamage(GameObject target)

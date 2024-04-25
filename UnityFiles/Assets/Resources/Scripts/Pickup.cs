@@ -15,7 +15,7 @@ public class Pickup : MonoBehaviour
     public GameObject wincam;
     public GameObject maincam;
     public GameObject deathcam;
-
+    public GameObject monster;
 
     private void OnTriggerEnter(Collider collider)
     {
@@ -36,6 +36,9 @@ public class Pickup : MonoBehaviour
                     maincam.SetActive(false);
                     wincam.SetActive(true);
                     deathcam.SetActive(false);
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    monster.GetComponent<Rigidbody>().freezeRotation = true;
                     break;
             }
             gameObject.SetActive(false);

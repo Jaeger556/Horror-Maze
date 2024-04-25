@@ -20,6 +20,9 @@ public class HUDController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        bear1.SetActive(false);
+        bear2.SetActive(false);
+        bear3.SetActive(false);
     }
 
     [SerializeField] TMP_Text interactionText;
