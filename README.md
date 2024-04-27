@@ -1,6 +1,6 @@
 # Horror Maze
 
-This project is a video game for my capstone class. Its gameplay consists of exploring a maze while being tracked by a bloodthirsty monster. The player's objective is to locate three objects that are linked to the creature's soul. Once the player has collected all three objects the monster is defeated. Although, the monster is an experienced hunter and will track the player efficiently. If the player doesn't find the objects to defeat the monster quickly enough they will surely meet their demise.
+This project is a video game for my capstone class. Its gameplay consists of exploring a maze while being tracked by a bloodthirsty monster. The player's objective is to locate three teddy bears that are linked to the creature's soul. Once the player has collected all three bears the monster is defeated. Although, the monster is an experienced hunter and will track the player efficiently. If the player doesn't find the bears to defeat the monster quickly enough they will surely meet their demise.
 
 ## Controls
 
