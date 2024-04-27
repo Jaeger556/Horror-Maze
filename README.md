@@ -3,10 +3,25 @@
 This project is a video game for my capstone class. Its gameplay consists of exploring a maze while being tracked by a bloodthirsty monster. The player's objective is to locate three objects that are linked to the creature's soul. Once the player has collected all three objects the monster is defeated. Although, the monster is an experienced hunter and will track the player efficiently. If the player doesn't find the objects to defeat the monster quickly enough they will surely meet their demise.
 
 ## Controls
+
 <p>Walk: WASD <br>
 Run: Left-Shift <br>
 Jump: Spacebar <br>
 Flashlight: Left-Click
+
+## Tutorial
+
+1. Survive: Flee the monster while trying to locate and collect teddy bears needed to defeat it.
+
+2. Flashlight: Use your flashlight to navigate the pitch black maze while keeping an eye out for the monster.
+
+3. Monster: You aren't the first victim of this beast. It seems to always have an idea of where its victims are. But, it is known to become impatient when it loses sight of its prey.
+
+4. Victory: Find and collect the three tedddy bears within the maze. Once the third is collected the monster will crumble in defeat.
+
+5. Die: Don't underestimate the expertise of the creature. It can swiftly cut its victims down and will do so in only three swipes of its elongated spike arm.
+
+6. Good Luck.
 
 ### Installing
 

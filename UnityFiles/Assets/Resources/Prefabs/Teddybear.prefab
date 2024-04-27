@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 9103893058747024927}
   - component: {fileID: 6796795999207648753}
   - component: {fileID: 4956854698699064250}
-  - component: {fileID: 8554679929770639829}
-  - component: {fileID: -235245067851447055}
-  - component: {fileID: 3917183956090948763}
+  - component: {fileID: -3537881401818606377}
+  - component: {fileID: 3125096097850897380}
+  - component: {fileID: 5318490088400819030}
   m_Layer: 0
   m_Name: Teddybear
   m_TagString: Untagged
@@ -122,11 +122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f57b715aaa2ccc458e8c057cb7cb558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emitter1: {fileID: 8554679929770639829}
-  emitter2: {fileID: -235245067851447055}
-  emitter3: {fileID: 3917183956090948763}
+  emitter1: {fileID: -3537881401818606377}
+  emitter2: {fileID: 3125096097850897380}
+  emitter3: {fileID: 5318490088400819030}
   wincam: {fileID: 0}
   maincam: {fileID: 0}
+  deathcam: {fileID: 0}
+  monster: {fileID: 0}
 --- !u!65 &4956854698699064250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -148,7 +150,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.6692924, y: 5.294032, z: 3.183471}
   m_Center: {x: 0, y: 2.6470199, z: -0.000061035156}
---- !u!114 &8554679929770639829
+--- !u!114 &-3537881401818606377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,10 +165,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1015069831
-      Data2: 1089020003
-      Data3: 1444844458
-      Data4: -1703159539
+      Data1: 170089795
+      Data2: 1155812090
+      Data3: -1338864760
+      Data4: -1187601977
     Path: event:/bear1
   Event: 
   PlayEvent: 0
@@ -176,10 +178,10 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &-235245067851447055
+--- !u!114 &3125096097850897380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,10 +209,10 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &3917183956090948763
+--- !u!114 &5318490088400819030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,6 +240,6 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20

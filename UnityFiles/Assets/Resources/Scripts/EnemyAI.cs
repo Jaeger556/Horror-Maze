@@ -35,10 +35,9 @@ public class EnemyAI : MonoBehaviour
     private float range;
 
     //Attack vars
-    public float timeBetweenAttacks;
-    public float playerSightTimer;
-    bool alreadyAttacked;
-    private bool hasAttacked;
+    private float playerSightTimer;
+    public float sightTimer;
+    private bool hasAttacked = false;
     private bool chased = false;
     private bool hasScared = false;
     [SerializeField] private AttributeManager atm;
@@ -123,14 +122,14 @@ public class EnemyAI : MonoBehaviour
 
             if (chased) SearchWalkPoint();
 
-            if(!canSeePlayer && playerSightTimer < 6) Patrol(); 
+            if(!canSeePlayer && playerSightTimer < sightTimer) Patrol(); 
+
             if(canSeePlayer && !playerInAttackRange)
             {
                 playerSightTimer += 2 * Time.deltaTime;
                 Chase();
             }
-
-            if(!canSeePlayer && playerSightTimer > 6 && !playerInAttackRange) Chase();
+            if(!canSeePlayer && playerSightTimer > sightTimer && !playerInAttackRange) Chase();
 
             if(!canSeePlayer && playerSightTimer > 0)
             {
@@ -177,7 +176,7 @@ public class EnemyAI : MonoBehaviour
             emitter1.Play();
         }
 
-        print("Patrolling.");
+        //print("Patrolling.");
         if (!walkPointSet && patrolTimer < 10)
         {
             SearchWalkPoint();
@@ -208,7 +207,7 @@ public class EnemyAI : MonoBehaviour
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
         {
-            Debug.Log("searched walkpoint set");
+            //Debug.Log("searched walkpoint set");
             walkPointSet = true;
         }
     }
@@ -217,10 +216,13 @@ public class EnemyAI : MonoBehaviour
     {
         if(hasAttacked)
         {
-            Debug.Log("Has attacked");
-            canMove = true;
+            //Debug.Log("chasing");
             chased = true;
             animator.SetBool("InAttackRange", false);
+            agent.SetDestination(player.position);
+        }
+        else
+        {
             agent.SetDestination(player.position);
         }
         
@@ -235,7 +237,7 @@ public class EnemyAI : MonoBehaviour
     private void Attack()
     {
         
-        print("Attacking.");
+        //print("Attacking.");
         agent.SetDestination(transform.position);
 
         agent.transform.rotation = Quaternion.Euler(0, player.rotation.y, 0);
@@ -244,21 +246,8 @@ public class EnemyAI : MonoBehaviour
         Vector3 newPos = new Vector3(player.position.x, gameObject.transform.position.y, player.position.z);
         transform.LookAt(newPos);
         
-        //USE bool canMove
-        
-        if (!alreadyAttacked)
-        {
-            canMove = false;
-            enemyAttacking();
-
-            //atm.DealDamage(player.gameObject);
-
-            //Animation
-            animator.SetBool("InAttackRange", true);
-
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
+        animator.SetBool("InAttackRange", true);
+        enemyAttacking();
     }
 
     public void damageEffect()
@@ -266,15 +255,8 @@ public class EnemyAI : MonoBehaviour
         atm.DealDamage(player.gameObject);
     }
 
-
-    //FUNCTION NOT USED YET.
     private void enemyAttacking()
     {
         hasAttacked = true;
-    }
-
-    private void ResetAttack()
-    {
-        alreadyAttacked = false;
     }
 }

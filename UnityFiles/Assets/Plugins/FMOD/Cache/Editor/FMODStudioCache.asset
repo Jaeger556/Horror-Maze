@@ -42,10 +42,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/bear1
   Guid:
-    Data1: 1015069831
-    Data2: 1089020003
-    Data3: 1444844458
-    Data4: -1703159539
+    Data1: 170089795
+    Data2: 1155812090
+    Data3: -1338864760
+    Data4: -1187601977
   Banks:
   - {fileID: 4926447691744740386}
   IsStream: 1
@@ -72,7 +72,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 3273702068
     data2: 3390199571
@@ -96,7 +96,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 3273702068
     data2: 3390199571
@@ -120,7 +120,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 3273702068
     data2: 3390199571
@@ -156,6 +156,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2842541768497371149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ambience/MusicVolume
+  m_EditorClassIdentifier: 
+  Name: MusicVolume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2120379388
+    data2: 282919059
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-1905685036054906074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,10 +195,10 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638495617115787505
+  lastModified: 638496604153142927
   FileSizes:
   - Name: 
-    Value: 1040
+    Value: 1244
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -198,12 +222,16 @@ MonoBehaviour:
   - {fileID: 2262126153253904379}
   - {fileID: -3635835663509245833}
   - {fileID: 8073561451193384731}
+  - {fileID: 6465987962250405793}
+  - {fileID: 2891121320814463921}
+  - {fileID: 3806946343251171985}
+  - {fileID: 5347106382444752387}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4926447691744740386}
   StringsBanks:
   - {fileID: -1905685036054906074}
-  cacheTime: 638495617115787505
+  cacheTime: 638496604153142927
   cacheVersion: 131617
 --- !u!114 &565726675845830919
 MonoBehaviour:
@@ -277,10 +305,88 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 3273702068
     data2: 3390199571
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2891121320814463921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/win
+  m_EditorClassIdentifier: 
+  Path: event:/win
+  Guid:
+    Data1: -182133643
+    Data2: 1159739306
+    Data3: 329473681
+    Data4: -736038816
+  Banks:
+  - {fileID: 4926447691744740386}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3806946343251171985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/lose
+  m_EditorClassIdentifier: 
+  Path: event:/lose
+  Guid:
+    Data1: 1861591291
+    Data2: 1097077473
+    Data3: 1876544182
+    Data4: -1370235756
+  Banks:
+  - {fileID: 4926447691744740386}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3962109734598611284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ambience1/MusicVolume
+  m_EditorClassIdentifier: 
+  Name: MusicVolume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2120379388
+    data2: 282919059
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -300,9 +406,37 @@ MonoBehaviour:
   Path: Assets/Plugins/FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638495617115757392
+  lastModified: 638496604153132935
   FileSizes: []
   Exists: 1
+--- !u!114 &5347106382444752387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ambience1
+  m_EditorClassIdentifier: 
+  Path: event:/ambience1
+  Guid:
+    Data1: 290025025
+    Data2: 1272534921
+    Data3: -463990621
+    Data4: -385097274
+  Banks:
+  - {fileID: 4926447691744740386}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3962109734598611284}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 111768
 --- !u!114 &5483705494493642536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +453,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 3273702068
     data2: 3390199571
@@ -327,6 +461,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6465987962250405793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ambience
+  m_EditorClassIdentifier: 
+  Path: event:/ambience
+  Guid:
+    Data1: 805797181
+    Data2: 1234512607
+    Data3: 78844047
+    Data4: 100811816
+  Banks:
+  - {fileID: 4926447691744740386}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2842541768497371149}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8073561451193384731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,7 +533,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 3273702068
     data2: 3390199571

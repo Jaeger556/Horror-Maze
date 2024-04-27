@@ -6,9 +6,7 @@ public class AttributeManager : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 100;
     [SerializeField] private HUDController HUDController;
-    //[SerializeField] private Healthbar enemyHealthbar;
     private float currentHealth;
-    //private int pAttack = 25;
     private float eAttack  = 33.5f;
 
     public GameObject pp;
@@ -21,7 +19,6 @@ public class AttributeManager : MonoBehaviour
         currentHealth = maxHealth;
 
         HUDController.UpdateHealthBar(maxHealth, currentHealth);
-        //enemyHealthbar.UpdateHealthBar(maxHealth, currentHealth);
     }
 
     void Update()
@@ -46,8 +43,6 @@ public class AttributeManager : MonoBehaviour
     public void EnemyDamage(int amount)
     {
         currentHealth -= amount;
-        //enemyHealthbar.GetComponent<Healthbar>();
-        //enemyHealthbar.UpdateHealthBar(maxHealth, currentHealth);
     }
 
     public void DealDamage(GameObject target)
@@ -56,7 +51,7 @@ public class AttributeManager : MonoBehaviour
 
         if(temp.CompareTag("Player"))
         {
-            print("damage player");
+            //print("damage player");
             temp.TakeDamage(eAttack);
 
             var damageEffectPP = pp.GetComponent<DamageEffectPP>();

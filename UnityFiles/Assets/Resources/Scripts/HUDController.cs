@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Diagnostics;
+using FMODUnity;
 
 public class HUDController : MonoBehaviour
 {
@@ -118,10 +119,5 @@ public class HUDController : MonoBehaviour
     {
         settingsPanel.SetActive(false);
         pausePanel.SetActive(true);
-    }
-
-    public void MasterVolume()
-    {
-        
     }
 }
