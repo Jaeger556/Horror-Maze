@@ -38,12 +38,21 @@ Download the files and locate the executable within the build folder!
 
 ## Class Diagram
 
-![Capstone Class Diagram drawio(1)](https://github.com/Jaeger556/Horror-Maze/assets/46098988/b0ffbdc4-8686-4863-a073-8ecba25a3eaf)
+![Capstone Class Diagram drawio(3)](https://github.com/Jaeger556/Horror-Maze/assets/46098988/b7cbd286-38df-422c-aca5-da583790fd05)
 
 ### Class Relationships
 
-EnemyAI - Pickup:
+**EnemyAI - Pickup:**
+EnemyAI script utilizes static variable bearCount to disable the monster's pathfinding when the player game object is destroyed from taking enough damage. 
 
+**HUDController - Pickup:**
+HUDController script uses the static bearCount variable to enable a bear icon each time bearCount increases, up to three.
+
+**AttributeManager - Healthbar:**
+AttributeManager script accesses Healthbar's UpdateHealthBar function to adjust the player's healthbar according to the damage dealt.
+
+**AttributeManager - DamageEffectPP**
+AttributeManager script accesses DamageEffectPP's damageCoroutine to play the damage flash effect once the DealDamage function is called within AttributeManager
 
 ## Authors
 
