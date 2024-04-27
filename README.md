@@ -36,6 +36,15 @@ Download the files and locate the executable within the build folder!
 ![Capstone Use-Case drawio](https://github.com/Jaeger556/Horror-Maze/assets/46098988/d8abf203-a942-49af-8808-7eaba23052f1)
 
 
+## Class Diagram
+
+![Capstone Class Diagram drawio(1)](https://github.com/Jaeger556/Horror-Maze/assets/46098988/b0ffbdc4-8686-4863-a073-8ecba25a3eaf)
+
+### Class Relationships
+
+EnemyAI - Pickup:
+
+
 ## Authors
 
 * **Blaze Shofner**
