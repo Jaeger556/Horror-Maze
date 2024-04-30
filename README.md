@@ -25,7 +25,7 @@ Flashlight: Left-Click
 
 ### Installing
 
-Download the files and locate the executable within the build folder!
+Download the files and locate the executable within the latest build folder indicated by version number! Current version: 1.1
 
 ## Built With
 
