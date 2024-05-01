@@ -40,9 +40,7 @@ Download the files and locate the executable within the latest build folder indi
 
 ![Capstone Class Diagram drawio(3)](https://github.com/Jaeger556/Horror-Maze/assets/46098988/b7cbd286-38df-422c-aca5-da583790fd05)
 
-### Monster AI Flowchart
-
-![Monster AI Flowchart drawio(1)](https://github.com/Jaeger556/Horror-Maze/assets/46098988/f674411c-8abd-4862-9540-734ed953cc70)
+### Class Interactions
 
 **EnemyAI - Pickup:**
 EnemyAI script utilizes static variable bearCount to disable the monster's pathfinding when the player game object is destroyed from taking enough damage. 
@@ -55,6 +53,10 @@ AttributeManager script accesses Healthbar's UpdateHealthBar function to adjust 
 
 **AttributeManager - DamageEffectPP**
 AttributeManager script accesses DamageEffectPP's damageCoroutine to play the damage flash effect once the DealDamage function is called within AttributeManager
+
+### Monster AI Flowchart
+
+![Monster AI Flowchart drawio(1)](https://github.com/Jaeger556/Horror-Maze/assets/46098988/f674411c-8abd-4862-9540-734ed953cc70)
 
 ## Authors
 
